@@ -1,0 +1,84 @@
+{
+  "RootNamespace": "Puntonet",
+  "EndOfLine": "LF",
+  "ServerTypings": {
+    "LocalTexts": true
+  },
+  "Restore": {
+    "Exclude": [
+      "/wwwroot/Scripts/serenity/Serenity.CoreLib*.*",
+      "/wwwroot/Content/serenity/*"
+    ]
+  },
+  "Connections": [
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "dbo.Accesories",
+          "Identifier": "Accesories",
+          "Module": "Parameters",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Atributes",
+          "Identifier": "Atributes",
+          "Module": "Parameters",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Atributtes",
+          "Identifier": "Atributtes",
+          "Module": "Parameters",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Clothes",
+          "Identifier": "Clothes",
+          "Module": "Parameters",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Colors",
+          "Identifier": "Colors",
+          "Module": "Parameters",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.PersonAccesories",
+          "Identifier": "PersonAccesories",
+          "Module": "Parameters",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.PersonAtributte",
+          "Identifier": "PersonAtributte",
+          "Module": "Persons",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.PersonAtributtes",
+          "Identifier": "PersonAtributtes",
+          "Module": "Parameters",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.PersonClothes",
+          "Identifier": "PersonClothes",
+          "Module": "Parameters",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Persons",
+          "Identifier": "Persons",
+          "Module": "Persons",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
+  "UpgradeInfo": {
+    "InitialType": "Premium",
+    "InitialVersion": "6.1.8.0"
+  }
+}

@@ -1,0 +1,31 @@
+@model Puntonet.Common.DashboardPageModel
+@inject Serenity.ITextLocalizer Localizer
+@{
+    ViewData["Title"] = "Dashboard";
+    ViewData["PageId"] = "Dashboard";
+}
+
+@section Head {
+@Html.StyleBundle("Pages/Dashboard")
+@Html.ScriptBundle("Pages/Dashboard")
+}
+
+@section ContentHeader {
+    <h1>@Localizer.Get("Navigation.Dashboard")</h1>
+}
+
+<div class="row">
+    <div class="col-lg-3 col-sm-6">
+        <div class="card s-dashboard-card-sm">
+            <div class="card-body">
+                <h3>@Model.PersonsCount</h3>
+                <p>Total de Personas</p>
+            </div>
+            <div class="icon">
+                <i class="fa fa-users"></i>
+            </div>
+            <a href="~/Persons/Persons" class="card-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+</div>
+
